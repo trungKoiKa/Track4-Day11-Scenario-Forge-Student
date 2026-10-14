@@ -1,0 +1,47 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 3.5806160705911974,
+  "cutDur": 8.084943412655017,
+  "cutV": 15.134956931025853,
+  "cutDs": 9.262615858219071,
+  "pedT0": 16.800695003087704,
+  "pedV": 1.1863832666789214,
+  "busGo": 18.499810486703467,
+  "tgT": 1.2765837685330124,
+  "cutGap": 18.520226175550746,
+  "pedGap": 5.439804787781516,
+  "mu": 0.8,
+  "pedLook": 1,
+  "cutBrake": 0.0,
+  "civil": true
+ },
+ "policy": {},
+ "hazards": [
+  {
+   "type": "ped",
+   "x": 117.04754700282324,
+   "side": "S",
+   "v": 1.9912598161435855,
+   "t0": 0.0,
+   "trig": 22.267226289851692
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   96,
+   118
+  ],
+  "h0_v": [
+   0.9,
+   2.5
+  ],
+  "h0_trig": [
+   10,
+   50
+  ]
+ },
+ "exposure": 0.05,
+ "why": "Hành khách vừa xuống xe buýt đỗ ở điểm dừng rồi băng qua đường ngay trước hoặc sau thân xe buýt, ngoài vạch qua đường. h0_x [96, 118]: dọc thân xe buýt đỗ (tâm x = 106, dài khoảng 12 m, tức 100 đến 112) cộng vài mét hai đầu, dừng trước vạch ở x = 122. h0_v [0.9, 2.5] m/s: 0.91 m/s là tốc độ thiết kế cho người già, khoảng 1.22 đến 1.45 m/s cho người trẻ (Knoblauch, Pietrucha & Nitzburg 1996, TRR 1538); 2.5 m/s là đi vội hoặc chạy chậm để kịp. h0_trig [10, 50] m: người bước ra khi xe ta còn cách 10 đến 50 m, tức khoảng 1 đến 4 s ở 12.5 m/s, đúng khoảng mà người bị xe buýt che không thấy xe tới. exposure 0.05 mỗi chuyến: mỗi chuyến trong thị trấn này đi qua đúng 1 xe buýt đỗ; GIẢ ĐỊNH 5% số lần đó có một hành khách băng ngang quanh xe buýt lúc xe ta tới gần. Chưa tìm được nghiên cứu đo trực tiếp tỉ lệ này: video tại điểm dừng giữa đoạn ở Kerala (NITK, PET của người qua đường gần điểm dừng) cho thấy xe buýt đỗ che tầm nhìn là nguyên nhân chính; nghiên cứu ca-chứng ở Lima (Injury Prevention 2015) thấy điểm dừng giữa đoạn làm tăng nguy cơ va chạm (OR 2.36). Con số 5% cần được thay bằng đếm video thực địa tại điểm dừng."
+}
